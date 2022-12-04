@@ -19,7 +19,7 @@ def callback(event):
     new = int(data[0].get('sick')) - int(data[1].get('sick'))  # Получаем вновь выявленных
 
     lblData2.configure(text=c + ' ' + data[0].get('date'))
-    lblData3.configure(text='Всего заболевших: ' + data[0].get('sick'))
+    lblData3.configure(text='Всего заболевших: ' + str(data[0].get('sick')))
     lblData4.configure(text='Вновь выявленных: ' + str(new))
 
 
